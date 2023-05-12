@@ -1,0 +1,21 @@
+@import "../../styles/custom";
+
+.drum-pad {
+    padding: 25px 45px !important;
+    background-color: $bg-button !important;
+    color: $font-color !important;
+    font-weight: 600 !important;
+    box-shadow: $custom-shadow;
+    border: none !important;
+}
+
+.drum-pad:active{
+    box-shadow: none;
+    background-color: $border !important;
+}
+
+@include media-breakpoint-down(sm) {
+    .drum-pad{
+        padding: 15px 35px !important;
+    }
+}

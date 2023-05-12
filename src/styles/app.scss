@@ -1,0 +1,42 @@
+@import "custom";
+
+.App{
+    height: 100vh;
+}
+
+.drum-machine{
+    border: 4px $border solid;
+    background-color: $color-secondary;
+}
+
+@include media-breakpoint-down(sm) {
+    .App{
+        height: max-content !important;
+        margin: 2rem 0rem 2rem 0rem !important;
+    }
+}
+
+
+@include media-breakpoint-up(sm) {
+    .App{
+        width: 100% !important;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .App{
+        width: 75% !important;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .App{
+        width: 50% !important;
+    }
+}
+
+// @include media-breakpoint-up(lg) {
+//     .App{
+//         width: 50% !important;
+//     }
+// }
