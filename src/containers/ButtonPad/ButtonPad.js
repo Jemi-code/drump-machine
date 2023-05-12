@@ -41,9 +41,9 @@ const ButtonPad = (props) => {
         }
     }
     return (
-        <Button className='drum-pad my-3' onClick={playAudio}>
+        <Button className='drum-pad my-3' id='props.audio.name' onClick={playAudio}>
             {props.audio.key}
-            <audio className='audio' id={props.audio.key} src = {props.audio.source} />
+            <audio className='audio clip' id={props.audio.key} src = {props.audio.source} />
         </Button>
     );
 };

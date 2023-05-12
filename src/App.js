@@ -24,10 +24,10 @@ function App() {
   });
 
   return (
-    <Container fluid = "sm" id="drum-machine" className="d-flex justify-content-center align-items-center App">
-      <Row id="drum-machin" className="shadow-sm drum-machine d-flex">
+    <Container fluid = "sm" className="d-flex justify-content-center align-items-center App">
+      <Row className="shadow-sm drum-machine d-flex">
         <Col md = {6} className="button-pad">
-          <Row>
+          <Row id="drum-machine" >
               {audios.map((audio, i) => {
                 return <Col key = {i} className="col-4"><ButtonPad className = 'm-2' audio = {audio} /></Col>
               })}
